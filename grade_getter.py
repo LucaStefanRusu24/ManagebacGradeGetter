@@ -11,11 +11,11 @@ driver.get("https://vampires.managebac.com/student")
 def login():
 	username = driver.find_element_by_id("session_login")
 	username.clear()
-	username.send_keys("lrusu24@student.goaisb.ro")
+	username.send_keys("EMAIL") # replace EMAIL with your actual managebac acount email
 
 	password = driver.find_element_by_id("session_password")
 	password.clear()
-	password.send_keys("Green2795")
+	password.send_keys("PASSWORD") # replace PASSWORD with your actual managebac password
 	driver.find_element_by_name("commit").click()
 
 
